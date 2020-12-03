@@ -44,6 +44,9 @@ li {
 .post {
 	margin-bottom: 10px;
 }
+.dotted {
+	border-bottom: 2px dotted #999;
+}
 
 .top-banner { 
     position: relative;
