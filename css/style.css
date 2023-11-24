@@ -17,8 +17,9 @@ a:hover {
 }
 
 .content {
-	width:900px; 
+	max-width: 940px; 
 	margin:0 auto;
+	padding: 0 20px;
 }
 ul.nav.top {
 	margin-top: 15px;
@@ -46,11 +47,27 @@ li {
 	border-bottom: 2px dotted #999;
 }
 
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+}
+
+.flex-child {
+    flex: 2;
+}  
+
+.flex-child:first-child {
+	text-align: center;
+	flex: 1;
+} 
+
 .top-banner { 
     position: relative;
-    height: 250px;
     width: 900px;
     margin: 0 auto;
+	margin-top: 50px;
 }
 
 .block-bg {
@@ -59,15 +76,8 @@ li {
 	margin: 30px;
 }
 
-.block-bg .header-image-wrap {
-	width: 100%;
-	height: 100%;
-}
-
 .header-image {
-	height: 70%;
-	top: 15%;
-	position: absolute;
+	height: 170px;
 }
 
 .title-style {
@@ -86,13 +96,15 @@ li {
 }
 .image-holder {
 	width: 300px;
-	height: 280px;
 	overflow: hidden;
 	margin: 0 10px;
 }
 .tri-image {
 	width: 100%;
 	cursor:zoom-in;
+	object-fit: cover;
+	background: url(blah.jpg) 50% 50% no-repeat; /* 50% 50% centers image in div */
+	aspect-ratio: 1/1;
 }
 .text-container-row {
 	display: flex;
@@ -144,3 +156,6 @@ h5 {
 	text-transform: uppercase;
 }
 
+@media (max-width: 850px) { 
+	
+ }
